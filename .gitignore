@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+Frontend/node_modules/
+arcane-backend/node_modules/
+
+# Next.js build output
+Frontend/.next/
+
+# Environment variables (Secrets)
+.env
+arcane-backend/.env
+Frontend/.env.Local
+
+# Local Uploads
+arcane-backend/uploads/
