@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const upload = require('../middleware/upload');
-const { protect, admin } = require('../middleware/authMiddleware');
+const upload = require('../Middleware/upload');
+const { protect, admin } = require('../Middleware/authMiddleware');
 
 // @route   POST /api/upload/product-image
 // @desc    Upload a single product image
