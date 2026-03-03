@@ -400,6 +400,19 @@ export default function CartPage() {
               )}
             </button>
 
+            {paymentMethod === "cod" && (
+              <div className="flex flex-col gap-1 text-center">
+                <p className="text-xs text-muted-foreground">
+                  ⚠️ Please fill the delivery address form before placing your order.
+                </p>
+                {codError && (
+                  <p className="text-xs text-destructive font-bold animate-pulse mt-1">
+                    {codError}
+                  </p>
+                )}
+              </div>
+            )}
+
             {shipping > 0 && (
               <p className="text-xs text-center text-muted-foreground">
                 Add ${(100 - totalPrice).toFixed(2)} more for free shipping
