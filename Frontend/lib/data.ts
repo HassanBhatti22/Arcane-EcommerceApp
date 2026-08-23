@@ -1,3 +1,16 @@
+export interface CartItem {
+  productId: string;
+  name: string;
+  image: string;
+  brand: string;
+  price: number;
+  quantity: number;
+  variant: {
+    color: string;
+    size: string;
+  };
+}
+
 export interface Review {
   _id?: string;
   user?: string;
